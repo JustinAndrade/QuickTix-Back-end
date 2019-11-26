@@ -9,4 +9,9 @@ server.use(morgan('dev'));
 server.use(cors());
 server.use(helmet());
 
+server.get('/', (req, res) => {
+    res.json({ message: 'Welcome to the QuickTix Backend' })
+})
+
+
 module.exports = server;

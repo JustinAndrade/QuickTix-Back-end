@@ -1,0 +1,35 @@
+{
+  "name": "quicktix-back-end",
+  "version": "1.0.0",
+  "description": "Backend for QuickTix",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.1",
+    "helmet": "^3.21.2",
+    "knex": "^0.20.2",
+    "knex-cleaner": "^1.3.0",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.1",
+    "pg": "^7.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustinAndrade/QuickTix-Back-end.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JustinAndrade/QuickTix-Back-end/issues"
+  },
+  "homepage": "https://github.com/JustinAndrade/QuickTix-Back-end#readme"
+}
