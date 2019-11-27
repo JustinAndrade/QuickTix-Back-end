@@ -11,8 +11,8 @@ pg.defaults.ssl = true;
 
 module.exports = {
     development: {
-        client: "pg",
-        connection: process.env.DATABASE_URL || devConnection,
+        client: "sqlite3",
+        connection: "./data/quicktix.db3",
         pool: {
             min: 2,
             max: 10

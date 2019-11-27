@@ -1,6 +1,6 @@
 
 exports.up = async function (knex) {
-    await knex.schema.createTable(TICKET, tbl => {
+    await knex.schema.createTable('TICKET', tbl => {
         tbl.increments()
         tbl.string('title').notNullable()
         tbl.string('description').notNullable()
@@ -14,5 +14,5 @@ exports.up = async function (knex) {
 };
 
 exports.down = async function (knex) {
-    await knex.schema.dropTableIfExists(TICKET)
+    await knex.schema.dropTableIfExists('TICKET')
 };

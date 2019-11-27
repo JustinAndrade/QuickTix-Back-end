@@ -1,18 +1,12 @@
 
 exports.up = async function (knex) {
-    await knex.schema.createTable(TICKET_COMMENTS, tbl => {
+    await knex.schema.createTable('TICKET_COMMENTS', tbl => {
         tbl.increments()
-        tbl.string('title').notNullable()
+        tbl.integer('userId').notNullable()
         tbl.string('description').notNullable()
-        tbl.string('fixesAttempted').notNullable()
-        tbl.integer('userId')
-        tbl.string('assignedId')
-        tbl.bool('statusId')
-        tbl.string('comments')
-        tbl.string('categories')
     })
 };
 
 exports.down = async function (knex) {
-    await knex.schema.dropTableIfExists(TICKET_COMMENTS)
+    await knex.schema.dropTableIfExists('TICKET_COMMENTS')
 };
